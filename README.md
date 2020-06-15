@@ -2,7 +2,7 @@ nanoESP32-S2
 -----------
 * [nanoESP32-S2介绍](#nanoESP32-S2介绍) 
 * [模组规格](#模组规格)
-* [ESP32-S2-vs-ESP32](#ESP32-S2-vs-ESP32)
+* [ESP32-S2 vs ESP32](#ESP32-S2 vs ESP32)
 * [demo说明](#demo说明)
 * [产品链接](#产品链接)
 * [参考](#参考)
@@ -22,7 +22,7 @@ ESP32-S2-WROOM-I | No  | Yes|No|
 ESP32-S2-WROVER | Yes   | No|Yes|
 ESP32-S2-WROVER-I | No  | Yes | Yes|
 
-# ESP32-S2-vs-ESP32
+# ESP32-S2 vs ESP32
 ESP32-S2芯片和ESP32相比，差异说明如下
 模组|ESP32 | ESP32-S2|
 ----|----|----|
@@ -70,7 +70,7 @@ $cd demo
 $idf.py -p /dev/ttyUSB0 flash monitor
 ```
 # 产品链接
-[nanoESP32-S2 Board](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21349689053.18.305e20f8cSEvqA&id=614093598737)
+[nanoESP32-S2 Board](https://item.taobao.com/item.htm?id=620291976381)
 
 # 参考
 ### esp-idf
