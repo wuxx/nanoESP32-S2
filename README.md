@@ -2,7 +2,7 @@ nanoESP32-S2
 -----------
 * [nanoESP32-S2介绍](#nanoESP32-S2介绍) 
 * [模组规格](#模组规格)
-* [ESP32-S2 vs ESP32](#ESP32-S2 vs ESP32)
+* [ESP32-S2 vs ESP32](#ESP32-S2-vs-ESP32)
 * [demo说明](#demo说明)
 * [产品链接](#产品链接)
 * [参考](#参考)
