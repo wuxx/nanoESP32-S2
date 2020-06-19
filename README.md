@@ -65,8 +65,10 @@ Low Power Consumption | 10uA deep sleep| Automatic RF power management 5uA in id
 预置的出厂测试固件源码位于demo目录下，上电之后预期RGB LED应该会开始闪烁，两个TYPE-C接口一个为CH340 USB，用于调试下载，另一个为ESP32-S2的USB，若插入ESP32-S2 USB，预期会出现一个名为"ESP32-S2 MSC"的的U盘以及一个CDC串口设备。
 固件编译
 ```
-$cd /path/to/esp-idf && . ./export.sh && cd -
+$git clone https://github.com/espressif/esp-idf.git
+$cd /path/to/esp-idf && ./install.sh && . ./export.sh && cd -
 $cd demo
+$idf.py set-target esp32s2
 $idf.py -p /dev/ttyUSB0 flash monitor
 ```
 # 产品链接
