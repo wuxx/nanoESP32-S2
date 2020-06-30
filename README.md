@@ -67,7 +67,8 @@ Low Power Consumption | 10uA deep sleep| Automatic RF power management 5uA in id
 ```
 $git clone https://github.com/espressif/esp-idf.git
 $cd /path/to/esp-idf && ./install.sh && . ./export.sh && cd -
-$cd demo
+$git clone https://github.com/hathach/tinyusb.git
+$cd tinyusb/examples/device/cdc_msc_freertos/
 $idf.py set-target esp32s2
 $idf.py -p /dev/ttyUSB0 flash monitor
 ```
