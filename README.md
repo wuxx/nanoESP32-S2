@@ -78,5 +78,7 @@ $idf.py -p /dev/ttyUSB0 flash monitor
 # 参考
 ### esp-idf
 https://github.com/espressif/esp-idf
+### esp32-s2 get-started
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/
 ### esp32-s2
 https://www.espressif.com/zh-hans/products/socs/esp32-s2
