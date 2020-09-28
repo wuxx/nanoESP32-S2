@@ -1,32 +1,29 @@
 nanoESP32-S2
 -----------
-[中文](./README.md) [English](./README_en.md)
-
-* [nanoESP32-S2介绍](#nanoESP32-S2介绍) 
-* [模组规格](#模组规格)
+* [nanoESP32-S2 Introduce](#nanoESP32-S2-Introduce) 
+* [Module Specifications](#Module-Specifications)
 * [ESP32-S2 vs ESP32](#ESP32-S2-vs-ESP32)
-* [demo说明](#demo说明)
-* [产品链接](#产品链接)
-* [参考](#参考)
+* [Demo](#Demo)
+* [Product Link](#Product-Link)
+* [Reference](#Reference)
 
 
-# nanoESP32-S2介绍
-nanoESP32-S2 是MuseLab基于乐鑫ESP32-S2系列模组推出的开发板，板载USB转串口，TYPE-C、全彩LED，引脚兼容官方开发板，同时引出调试烧录串口和ESP32-S2本身的USB接口，更方便日常的开发测试。
-
+# nanoESP32-S2 Introduce
+nanoESP32-S2 is ESP32-S2 dev board made by MuseLab, base on ESP32-S2 Modules manufactured by Expressif, with on-board usb-to-serial, TYPE-C, RGB LED, the pin is compatible with Expressif's official development board ESP32-S2-Saola series, and the dual-USB include usb-to-serial and the USB ESP32-S2 itself, more convenient for development and test.  
 ![nanoESP32-S2](https://github.com/wuxx/nanoesp32-s2/blob/master/doc/nanoESP32-S2.jpg)
-# 模组规格 
-nanoESP32-S2支持乐鑫官方推出的四种模组，模组之间的差异说明如下
 
-模组|PCB天线 | IPEX天线|PSRAM|
+# Module Specifications 
+nanoESP32-S2 support four Modules made by Espressif, the differences between the modules are explained as follows
+Module|PCB Antenna | IPEX Antenna|PSRAM|
 ----|----|----|-----|
 ESP32-S2-WROOM | Yes | No |No|
 ESP32-S2-WROOM-I | No  | Yes|No|
-ESP32-S2-WROVER | Yes   | No|Yes|
-ESP32-S2-WROVER-I | No  | Yes | Yes|
+ESP32-S2-WROVER | Yes   | No|Yes (2MB)|
+ESP32-S2-WROVER-I | No  | Yes | Yes (2MB)|
 
 # ESP32-S2 vs ESP32
-ESP32-S2芯片和ESP32相比，差异说明如下
-模组|ESP32 | ESP32-S2|
+Compared with ESP32-S2 and ESP32, the difference is explained as follows
+Module|ESP32 | ESP32-S2|
 ----|----|----|
 Microcontroller | Xtensa dual-core 32-bit LX6 | Xtensa single-core 32-bit LX7 |
 Clock Frequency | 160/240 MHz | 160/240 MHz|
@@ -63,9 +60,8 @@ Crypto | AES, SHA-2, RSA, ECC, RNG| AES-128/192/256, SHA-2, RSA, RNG, HMAC, Digi
 Low Power Consumption | 10uA deep sleep| Automatic RF power management 5uA in idle mode 24uA at 1% duty cycle |
 
 
-# demo说明
-预置的出厂测试固件源码位于demo目录下，上电之后预期RGB LED应该会开始闪烁，两个TYPE-C接口一个为CH340 USB，用于调试下载，另一个为ESP32-S2的USB，若插入ESP32-S2 USB，预期会出现一个名为"ESP32-S2 MSC"的的U盘以及一个CDC串口设备。
-固件编译参考：
+# Demo
+The preset factory test firmware source code is located in the demo directory. and the firmware is in firmware directory, expected that the RGB LED should start to flash after power-on. One of the two TYPE-C interfaces is CH340 USB for debugging and downloading, and the other is the USB of ESP32-S2, when plug ESP32-S2 USB, a U disk named "ESP32-S2 MSC" and a CDC serial device are expected, how to compile the source code show here (for reference, may be outdated, cause the esp-idf is always updating)
 ```
 $git clone https://github.com/espressif/esp-idf.git
 $cd /path/to/esp-idf && ./install.sh && . ./export.sh && cd -
@@ -74,10 +70,10 @@ $cd tinyusb/examples/device/cdc_msc_freertos/
 $idf.py set-target esp32s2
 $idf.py -p /dev/ttyUSB0 flash monitor
 ```
-# 产品链接
-[nanoESP32-S2 Board](https://item.taobao.com/item.htm?id=620291976381)
+# Product Link
+[nanoESP32-S2 Board](https://www.aliexpress.com/item/1005001403045642.html?gps-id=pcStoreNewArrivals&scm=1007.23409.123629.0&scm_id=1007.23409.123629.0&scm-url=1007.23409.123629.0&pvid=6c59d14d-bb7b-4d0f-b0b8-fc5f6ae78288&spm=a2g0o.store_home.smartNewArrivals_1285899620.1005001403045642)
 
-# 参考
+# Reference
 ### esp-idf
 https://github.com/espressif/esp-idf
 ### esp32-s2 get-started
