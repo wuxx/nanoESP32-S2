@@ -71,7 +71,8 @@ $idf.py set-target esp32s2
 $idf.py -p /dev/ttyUSB0 flash monitor
 ```
 # Product Link
-[nanoESP32-S2 Board](https://www.aliexpress.com/item/1005001403045642.html?gps-id=pcStoreNewArrivals&scm=1007.23409.123629.0&scm_id=1007.23409.123629.0&scm-url=1007.23409.123629.0&pvid=6c59d14d-bb7b-4d0f-b0b8-fc5f6ae78288&spm=a2g0o.store_home.smartNewArrivals_1285899620.1005001403045642)
+[Aliexpress](https://www.aliexpress.com/item/1005001403045642.html?gps-id=pcStoreNewArrivals&scm=1007.23409.123629.0&scm_id=1007.23409.123629.0&scm-url=1007.23409.123629.0&pvid=6c59d14d-bb7b-4d0f-b0b8-fc5f6ae78288&spm=a2g0o.store_home.smartNewArrivals_1285899620.1005001403045642)  
+[Tindie](https://www.tindie.com/products/johnnywu/nanoesp32-s2-development-board)
 
 # Reference
 ### esp-idf
